@@ -1,0 +1,51 @@
+:root{
+    --colour-bg1: #000000;
+    --colour-bg2: #6D5632;
+    --colour-bg3: #362121;
+    --colour-bg4: #313131;
+    --colour-bg5: #584e11;
+    --colour-bg6: #684a4a;
+    --colour-bg6: #424133;
+    --colour-btn1: #313131;
+    --colour-btn2: #02b220;
+    --colour-btn3: #ff0000;
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: ;
+    --text-base-size: 1rem;
+
+    --text-scale-ratio: 1.2;
+    --text-xxl: 4rem;
+    --text-xl: 3rem;
+    --text-lg: 2rem;
+    --text-md: 1.4rem;
+}
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > * {
+    margin: 0.5rem;
+    color: white;
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--colour-bg1);
+}
+
+
+footer {
+    background-color: var(--colour-bg4);
+    
+}
+
+footer > * {
+    color: white;
+    list-style-type: none;
+    align-items: center;
+}
