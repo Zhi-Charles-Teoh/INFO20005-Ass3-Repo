@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+:root {
+    --font-primary: 'Martel Sans', sans-serif;
+    --font-secondary: 'Mate SC', serif;
+
+    /* Base values */
+    --text-base-size: 1rem;
+
+    /* Type scale */
+    --text-scale-ratio: 1.2;
+    --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+    --text-sm: calc(1em / var(--text-scale-ratio));
+    --text-md: calc(1em * var(--text-scale-ratio));
+    --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-xxl: calc(
+        1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio)
+    );
+    --text-xxxl: calc(
+        1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) *
+        var(--text-scale-ratio)
+    );
+    
+    --baseline: 24px;
+
+    /* spacing values */
+   --space-sm: calc(var(--baseline) / 2);
+   --space-md: var(--baseline);
+   --space-lg: calc(var(--baseline) * 2);
+   --space-xl: calc(var(--baseline) * 3);
+ 
+   --space-xxxs: 0.25em;
+   --space-xxs: 0.375em;
+   --space-xs: 0.5em;
+   --space-sm: 0.75em;
+   --space-md: 1.25em;
+   --space-lg: 2em;
+   --space-xl: 3.25em;
+   --space-xxl: 5.25em;
+   --space-xxxl: 8.5em;
+ 
+   /* typography */
+   --color-text: var(--gray-10);
+   --color-text-heading: var(--black);
+   --color-text-subtle: var(--gray-6);
+   --color-link: var(--color-primary);
+   --color-link-visited: var(--color-primary-dark);
+ 
+   /* line-height */
+   --heading-line-height: 1.2;
+   --body-line-height: 1.4;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--text-base-size);
+}
+
+h1 {
+    font-size: var(--text-xl);
+    color: white;
+    font-family: var(--font-secondary);
+}
+
+h2 {
+    font-size: var(--text-md);
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+}
+
+
+h3{
+    font-size: var(--text-md);
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+}
+
+ul,
+ul li {
+    margin-left: 0.8em;
+    padding: 0;
+    text-indent: 0;
+    font-weight: 300;
+    font-size: var(--text-md);
+}
+
+ul {
+    margin-bottom: 1em;
+    border-left: solid var(--color-secondary) 5px;
+}
+
+li + li {
+    margin-top: 0.6em;
+}
+
+p {
+    font-weight: 400;
+    font-size: var(--text-lg);
+    text-align: center;
+    margin: 0.5em;
+}

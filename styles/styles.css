@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
+
 :root{
     --colour-bg1: #000000;
     --colour-bg2: #6D5632;
@@ -9,7 +11,7 @@
     --colour-btn1: #313131;
     --colour-btn2: #02b220;
     --colour-btn3: #ff0000;
-    --font-primary: 'Raleway', sans-serif;
+    --font-primary: 'Martel Sans', sans-serif;
     --font-secondary: ;
     --text-base-size: 1rem;
 
@@ -20,32 +22,21 @@
     --text-md: 1.4rem;
 }
 
-.cluster {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: var(--text-base-size);
+    font-family: var(--font-primary);
+    color: var(--colour-primary);
 }
 
-.cluster > * {
-    margin: 0.5rem;
-    color: white;
-    list-style-type: none;
-}
-
-header {
-    background-color: var(--colour-bg1);
-}
-
-
-footer {
-    background-color: var(--colour-bg4);
-    
-}
-
-footer > * {
-    color: white;
-    list-style-type: none;
-    align-items: center;
+body > * {
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-bottom: 5em;
 }

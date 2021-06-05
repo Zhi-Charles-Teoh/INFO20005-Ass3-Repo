@@ -1,0 +1,30 @@
+
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.cluster > * {
+    margin: 0.5rem;
+    color: white;
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--colour-bg1);
+}
+
+
+footer {
+    background-color: var(--colour-bg4);
+    
+}
+
+footer > * {
+    color: white;
+    list-style-type: none;
+    align-items: center;
+}
