@@ -1,0 +1,23 @@
+.btn-primary {
+    background-color: var(--colour-btn1);
+    color: var(--white);
+    text-decoration: none;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 10%;
+}
+
+.btn-yes {
+    background-color: var(--colour-btn2);
+    color: var(--white);
+    text-decoration: none;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 10%;
+}
+
+.btn-no {
+    background-color: var(--colour-btn3);
+    color: var(--white);
+    text-decoration: none;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: 10%;
+}

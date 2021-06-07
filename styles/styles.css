@@ -1,24 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap');
-
-:root{
-    --colour-bg1: #000000;
-    --colour-bg2: #6D5632;
-    --colour-bg3: #362121;
-    --colour-bg4: #313131;
-    --colour-bg5: #584e11;
-    --colour-bg6: #684a4a;
-    --colour-bg6: #424133;
-    --colour-btn1: #313131;
-    --colour-btn2: #02b220;
-    --colour-btn3: #ff0000;
-    --font-primary: 'Martel Sans', sans-serif;
-    --font-secondary: ;
-    --text-base-size: 1rem;
-
-    --text-scale-ratio: 1.2;
-    --text-xxl: 4rem;
-    --text-xl: 3rem;
-    --text-lg: 2rem;
-    --text-md: 1.4rem;
-}
-
+@import "colour.css";
+@import "layout.css";
+@import "components.css";
+@import "fonts.css";
