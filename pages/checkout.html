@@ -12,76 +12,79 @@
     <script language="javascript" type=text/javascript src="../reusables/header.txt"></script>
 
     <div class="left__forms">
-        <form class="form1__billing-info">
+        <div class="form1__billing-info">
             <h3>1) BILLING INFORMATION</h3>
-            <div class="form-section1">
-                <p>Billing name</p>
-                <input type="text" placeholder="e.g.: John Doe">
-                <p>Billing Address</p>
-                <input type="text" placeholder="e.g.: 43 Carnegie St">
+            <form id="form__billing">
+                <label for="billing__fname">Billing name</label>
+                <input type="text" id="billing__fname" name="billing__fname" placeholder="e.g.: John Doe">
+                <label for="billing__address">Billing address</label>
+                <input type="text" id="billing__address" name="billing__address" placeholder="e.g.: 43 Carnegie St">
                 <div class="double-textbox">
-                    <p>Suburb</p>
-                    <input type="text" placeholder="e.g.: Parkville">
-                    <p>Postcode</p>
-                    <input type="text" placeholder="e.g.: 1234">
+                    <label for="billing__suburb">Suburb</label>
+                    <input type="text" id="billing__suburb" name="billing__suburb" placeholder="e.g.: Parkville">
+                    <label for="billing__postcode">Postcode</label>
+                    <input type="text" id="billing__postcode" name="billing__postcode" placeholder="e.g.: 1234">
                 </div>
                 <div class="double-textbox">
-                    <p>State</p>
-                    <input type="text" placeholder="e.g.: Victoria or VIC">
-                    <p>Country</p>
-                    <input type="text" placeholder="e.g.: Australia">
+                    <label for="billing__state">State</label>
+                    <input type="text" id="billing__state" name="billing__state" placeholder="e.g.: Queensland or QLD">
+                    <label for="billing__country">Country</label>
+                    <input type="text" id="billing__country" name="billing__country" placeholder="e.g.: Australia">
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
 
         <div class="form2__shipping-info">
             <h3>2) SHIPPING INFORMATION</h3>
             <input type="checkbox">
             <p>Shipping information same as billing information</p>
-            <div class="form-section2">
-                <p>Receiver name</p>
-                <input type="text" placeholder="e.g.: John Doe">
-                <p>Shipping Address</p>
-                <input type="text" placeholder="e.g.: 43 Carnegie St">
+            <form id="form__shipping">
+                <label for="shipping__fname">Receiver name</label>
+                <input type="text" id="shipping__fname" name="shipping__fname" placeholder="e.g.: John Doe">
+                <label for="shipping__address">Shipping address</label>
+                <input type="text" id="shipping__address" name="shipping__address" placeholder="e.g.: 43 Carnegie St">
                 <div class="double-textbox">
-                    <p>Suburb</p>
-                    <input type="text" placeholder="e.g.: Parkville">
-                    <p>Postcode</p>
-                    <input type="text" placeholder="e.g.: 1234">
+                    <label for="shipping__suburb">Suburb</label>
+                    <input type="text" id="shipping__suburb" name="shipping__suburb" placeholder="e.g.: Parkville">
+                    <label for="shipping__postcode">Postcode</label>
+                    <input type="text" id="shipping__postcode" name="shipping__postcode" placeholder="e.g.: 1234">
                 </div>
                 <div class="double-textbox">
-                    <p>State</p>
-                    <input type="text" placeholder="e.g.: Victoria or VIC">
-                    <p>Country</p>
-                    <input type="text" placeholder="e.g.: Australia">
+                    <label for="shipping__state">State</label>
+                    <input type="text" id="shipping__state" name="shipping__state" placeholder="e.g.: Queensland or QLD">
+                    <label for="shipping__country">Country</label>
+                    <input type="text" id="shipping__country" name="shipping__country" placeholder="e.g.: Australia">
                 </div>
-            </div>
+            </form>
         </div>
+
         <div class="form3__payment-info">
             <h3>3) PAYMENT</h3>
-            <p>Card number</p>
-            <div class="card-input">
-                <input type="text" maxlength="4">
-                <input type="text" maxlength="4">
-                <input type="text" maxlength="4">
-                <input type="text" maxlength="4">
-            </div>
-            <p>Cardholder name</p>
-            <input type="text">
-            <div class="double-textbox">
-                <p>Expiry date</p>
-                <div class="expiry-input">
-                    <input type="text" maxlength="2">
-                    <h1>/</h1>
-                    <input type="text" maxlength="2">
-                 </div>
-                <p>CVV</p>
-                <input type="text" maxlength="3">
-            </div>
+            <form id="form__payment">
+                <label for="card1">Debit/Credit card number</label>
+                <div class="credit-card-textbox">
+                    <input type="text" id="card1" name="card1" maxlength="4">
+                    <input type="text" id="card2" name="card2" maxlength="4">
+                    <input type="text" id="card3" name="card3" maxlength="4">
+                    <input type="text" id="card4" name="card4" maxlength="4">
+                </div>
+                <label for="card__name">Cardholder name</label>
+                <input type="text" id="card__name" name="card__name">
+                <div class="double-textbox">
+                    <label for="card__expiry-month">Expiry date</label>
+                    <div class="expiry-input">
+                        <input type="text" id="card__expiry-month" name="card__expiry-month" maxlength="2">
+                        <h1>/</h1>
+                        <input type="text" id="card__expiry-year" name="card__expiry-year" maxlength="2">
+                    </div>
+                    <label for="card__cvv">CVV</label>
+                    <input type="text" id="card__cvv" name="card__cvv" maxlength="3">
+                </div>
+            </form>
         </div>
         <div class="form__buttons">
             <a class="" href="../pages/shoppingcart.html">BACK TO CART</a>
-            <button type="submit">PROCEED</button>
+            <a class="" href="../pages/thankyou.html">PROCEED</a>
         </div>
     </div>
 
@@ -139,6 +142,8 @@
                 <td><h3>$</h3></td>
                 <td><h3>0.00</h3></td>
             </tr>
+        </table>
+        <table>
             <tr>
                 <th>GRAND TOTAL</th>
                 <th>$</th>
