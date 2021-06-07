@@ -3,7 +3,7 @@
 
 :root {
     --font-primary: 'Martel Sans', sans-serif;
-    --font-secondary: 'Mate SC', serif;
+    --font-secondary: 'Mate SC', serif;  /* Used only for one line in index.html */
 
     /* Base values */
     --text-base-size: 1rem;

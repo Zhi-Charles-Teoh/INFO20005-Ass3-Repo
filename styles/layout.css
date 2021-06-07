@@ -1,4 +1,3 @@
-
 .cluster {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +10,7 @@
     margin: 0.5rem;
     color: white;
     list-style-type: none;
+    font-family: var(--font-primary);
 }
 
 header {
@@ -26,5 +26,9 @@ footer {
 footer > * {
     color: white;
     list-style-type: none;
+    align-items: center;
+}
+
+.top {
     align-items: center;
 }
