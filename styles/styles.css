@@ -22,21 +22,3 @@
     --text-md: 1.4rem;
 }
 
-html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-
-body{
-    font-size: var(--text-base-size);
-    font-family: var(--font-primary);
-    color: var(--colour-primary);
-}
-
-body > * {
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 5em;
-}

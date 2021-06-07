@@ -4,11 +4,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/reset.css">
     <title>Checkout | Great Guitars AU</title>
 </head>
 <body>
-    <script language="javascript" type=text/javascript src="reusables/header.txt"></script>
+    <script language="javascript" type=text/javascript src="../reusables/header.txt"></script>
 
-    <script language="javascript" type=text/javascript src="reusables/footer.txt"></script>   
+    <div class="left__forms">
+        <div class="form1__billing-info">
+            <h3>1) BILLING INFORMATION</h3>
+            <div class="form-section1">
+                <p>Billing name</p>
+                <input type="text" placeholder="e.g.: John Doe">
+                <p>Billing Address</p>
+                <input type="text" placeholder="e.g.: 43 Carnegie St">
+                <div class="double-textbox">
+                    <p>Suburb</p>
+                    <input type="text" placeholder="e.g.: Parkville">
+                    <p>Postcode</p>
+                    <input type="text" placeholder="e.g.: 1234">
+                </div>
+                <div class="double-textbox">
+                    <p>State</p>
+                    <input type="text" placeholder="e.g.: Victoria or VIC">
+                    <p>Country</p>
+                    <input type="text" placeholder="e.g.: Australia">
+                </div>
+            </div>
+        </div>
+
+        <div class="form2__shipping-info">
+            <h3>2) SHIPPING INFORMATION</h3>
+            <input type="checkbox">
+            <p>Shipping information same as billing information</p>
+            <div class="form-section2">
+                <p>Receiver name</p>
+                <input type="text" placeholder="e.g.: John Doe">
+                <p>Shipping Address</p>
+                <input type="text" placeholder="e.g.: 43 Carnegie St">
+                <div class="double-textbox">
+                    <p>Suburb</p>
+                    <input type="text" placeholder="e.g.: Parkville">
+                    <p>Postcode</p>
+                    <input type="text" placeholder="e.g.: 1234">
+                </div>
+                <div class="double-textbox">
+                    <p>State</p>
+                    <input type="text" placeholder="e.g.: Victoria or VIC">
+                    <p>Country</p>
+                    <input type="text" placeholder="e.g.: Australia">
+                </div>
+            </div>
+        </div>
+        <div class="form3__payment-info">
+            <h3>3) PAYMENT</h3>
+            <p>Card number</p>
+            <div class="card-input">
+                <input type="text" maxlength="4">
+                <input type="text" maxlength="4">
+                <input type="text" maxlength="4">
+                <input type="text" maxlength="4">
+            </div>
+            <p>Cardholder name</p>
+            <input type="text">
+            <div class="double-textbox">
+                <p>Expiry date</p>
+                <div class="expiry-input">
+                    <input type="text" maxlength="2">
+                    <h1>/</h1>
+                    <input type="text" maxlength="2">
+                 </div>
+                <p>CVV</p>
+                <input type="text" maxlength="3">
+            </div>
+        </div>
+        <div class="form__buttons">
+            <a class="" href="../pages/shoppingcart.html">BACK TO CART</a>
+            <button type="submit">PROCEED</button>
+        </div>
+    </div>
+
+    <div class="right__order-summary">
+        <h3>ORDER SUMMARY</h3>
+        <div class="order-summary">
+            <table class="order-cart">
+                <tr>
+                    <td>
+                        <a href="../pages/productpage.html">FRAMUS Star Bass</a>
+                    </td>
+                    <td>
+                        x2
+                    </td>
+                    <td>
+                        $1,000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="../pages/productpage.html">FRAMUS Star Bass</a>
+                    </td>
+                    <td>
+                        x2
+                    </td>
+                    <td>
+                        $1,000
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="../pages/productpage.html">FRAMUS Star Bass</a>
+                    </td>
+                    <td>
+                        x2
+                    </td>
+                    <td>
+                        $1,000
+                    </td>
+                </tr>
+            </table>
+            <a href="../pages/shoppingcart.html">Back to cart</a>
+        </div>
+        <table class="price__order-shipping">
+            <tr>
+                <td><h3>ORDER TOTAL</h3></td>
+                <td><h3>$</h3></td>
+                <td><h3>23,100.00</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>SHIPPING FEES</h3>
+                    <p>⚠ Will update after entering the shipping postcode</p>
+                </td>
+                <td><h3>$</h3></td>
+                <td><h3>0.00</h3></td>
+            </tr>
+            <tr>
+                <th>GRAND TOTAL</th>
+                <th>$</th>
+                <th>23,110.00</th>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
