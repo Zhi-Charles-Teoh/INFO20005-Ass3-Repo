@@ -83,7 +83,7 @@ ul li {
     padding: 0;
     text-indent: 0;
     font-weight: 300;
-    font-size: var(--text-md);
+    font-size: var(--text-sm);
 }
 
 ul {
