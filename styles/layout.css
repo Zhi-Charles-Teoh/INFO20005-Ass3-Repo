@@ -14,11 +14,17 @@
     font-family: var(--font-primary);
 }
 
+.section-header {
+    height: 8.5rem;
+    background-color: white;
+}
+
 header {
     background-color: var(--colour-bg1);
     position: fixed;
     width: 100%;
     z-index: 1;
+    font-size: var(--text-md);
 }
 
 .img__header {
@@ -26,12 +32,12 @@ header {
     padding-right: var(--space-lg);
 }
 
-.h__nav > .cluster > li > a:link, a:visited {
+a:link, a:visited {
     color: white;
     text-decoration: none;
 }
 
-.h__nav > .cluster > li > a:hover {
+a:hover {
     color: var(--colour-btn2);
     text-decoration: none;
 }
@@ -62,6 +68,7 @@ footer > li {
     justify-content: space-evenly;
     flex-direction: row;
     padding: 0.5rem;
+    white-space: nowrap;
 }
 
 footer > .content__center {
@@ -207,7 +214,7 @@ section {
     grid-area: c__image-3;
 }
 
-.c-text-responsive {
+.c-text-responsive {  /* Makes Section C responsive at width <= 720px */
     display: none;
 }
 
@@ -235,4 +242,52 @@ section {
 .section-nl {
     grid-area: section-nl;
     background-color: var(--colour-bg5);
+}
+
+/* catalogue.html */
+
+.section-catalogue {
+    padding: 2rem;
+    background-color: var(--colour-bg2);
+    display: grid;
+    grid-template-areas: 
+        "categories products products products products";
+    align-items: start;
+}
+
+.left__categories {
+    grid-area: categories;
+    padding: 2rem;
+    font-family: var(--font-primary);
+}
+
+.left__categories > h3 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+}
+
+.left__categories > ul > li > a > h4 {
+    padding-bottom: var(--space-xs);
+}
+
+.left__categories > ul > li + li {
+    padding-top: var(--space-lg);
+}
+
+.left__categories > ul > li > ul > li + li {
+    padding-top: var(--space-xxs);
+}
+
+.right__products {
+    grid-area: products;
+    text-align: center;
+}
+
+.product__pagenav {
+    font-family: var(--font-primary);
+    padding-top: 2rem;
+}
+
+.product__pagenav > ul > li {
+    display: inline;
 }
