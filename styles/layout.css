@@ -259,6 +259,10 @@ section {
     grid-area: categories;
     padding: 2rem;
     font-family: var(--font-primary);
+    position: sticky;
+    box-sizing: border-box;
+    top: 10rem; 
+    height: 100vh;  
 }
 
 .left__categories > h3 {
