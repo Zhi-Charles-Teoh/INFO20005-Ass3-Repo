@@ -15,7 +15,7 @@
 }
 
 .section-header {
-    height: 8.5rem;
+    height: 2rem;
     background-color: white;
 }
 
@@ -121,6 +121,10 @@ section {
     align-items: center;
 	height: auto;
     padding: 3rem;
+}
+
+section > * {
+    font-family: var(--font-primary);
 }
 
 /* index.html */
@@ -263,6 +267,7 @@ section {
     box-sizing: border-box;
     top: 10rem; 
     height: 100vh;  
+    font-size: var(--text-lg);
 }
 
 .left__categories > h3 {
@@ -275,7 +280,11 @@ section {
 }
 
 .left__categories > ul > li + li {
-    padding-top: var(--space-lg);
+    padding-top: var(--space-sm);
+}
+
+.left__categories > ul > li > ul > li {
+    font-size: var(--text-sm);
 }
 
 .left__categories > ul > li > ul > li + li {
@@ -294,4 +303,8 @@ section {
 
 .product__pagenav > ul > li {
     display: inline;
+    font-size: var(--text-lg);
 }
+
+/* productpage.html */
+
