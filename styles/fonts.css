@@ -56,12 +56,13 @@
 body {
     font-family: var(--font-primary);
     font-size: var(--text-base-size);
+    color: white;
 }
 
 h1 {
-    font-size: var(--text-xl);
+    font-size: var(--text-xxl);
     color: white;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 h2 {
@@ -91,13 +92,7 @@ ul {
     border-left: solid var(--color-secondary) 5px;
 }
 
-li + li {
-    margin-top: 0.6em;
-}
-
 p {
-    font-weight: 400;
-    font-size: var(--text-lg);
-    text-align: center;
-    margin: 0.5em;
+    font-size: var(--text-xs);
+    font-family: var(--font-primary);
 }

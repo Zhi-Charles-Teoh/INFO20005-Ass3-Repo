@@ -1,10 +1,12 @@
+/* General */
+
 .cluster {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    padding-bottom: 1em;
+    padding: auto;
 }
 
 .cluster > * {
@@ -16,13 +18,30 @@
 
 header {
     background-color: var(--colour-bg1);
+    position: fixed;
+    width: 100%;
 }
 
+.img__header {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: var(--colour-btn2);
+    text-decoration: none;
+}
 
 footer {
     background-color: var(--colour-bg4);
-    
 }
+
 
 footer > * {
     color: white;
@@ -30,15 +49,141 @@ footer > * {
     align-items: center;
 }
 
-.content__center {
+footer > .cluster {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer > li {
+    padding-top: var(--space-xs);
+}
+
+.fcontacts-cluster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+footer > .content__center {
     display: block;
     justify-content: center;
     align-items: center;
     padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 footer > .content__center > * {
     font-family: var(--font-primary);
     font-size: var(--text-sm);
     padding-bottom: var(--space-sm);
+    text-align: center;
+}
+
+.img__footer {
+    width: 70%;
+}
+
+.fcontacts-box {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: auto;
+    padding-right: var(--space-md);
+    padding-left: var(--space-md);
+}
+
+.fcontacts-box > * {
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    padding-top: var(--space-sm);
+    font-size: var(--text-md);
+    align-items: flex-start;
+}
+
+.fcontacts-box > ul > li + li {
+    padding-top: var(--space-xs);
+}
+
+/* index.html */
+
+.body__index {
+    display: grid;
+    grid-template-areas: 
+        "section-a"
+        "section-b"
+        "section-c"
+        "section-d"
+        "section-nl";
+
+    grid-template-rows: 100vh auto auto auto;
+    grid-template-columns: 100%;
+}
+
+.section-a {
+    grid-area: section-a;
+    background-image: linear-gradient(#000000, #00000000, #00000000), url(../images/guitar1_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.section-a-text {
+    margin-bottom: 22rem;
+}
+
+.h1__index {
+    font-family: var(--font-secondary);
+    font-size: 3.5rem;
+    padding: 0.5em;
+    font-weight: 400;
+}
+
+.section-c {
+    grid-area: section-c;
+    background-color: var(--colour-bg3);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-c > table {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    width: 80%;
+    table-layout: fixed;
+}
+
+.section-c > table > th, td {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    line-height: var(--space-md);
+    width: 300px;
+}
+
+.table-image {
+    width: 400px;
+    border-radius: 3rem;
+}
+
+.table-image__reversed {
+   
 }
