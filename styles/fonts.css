@@ -67,15 +67,16 @@ h1 {
 
 h2 {
     font-size: var(--text-md);
-    text-transform: uppercase;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
+    padding: 1rem;
+    padding-top: 3rem;
 }
 
 
 h3{
     font-size: var(--text-md);
     text-transform: uppercase;
-    font-family: var(--font-secondary);
+    font-family: var(--font-primary);
 }
 
 ul,

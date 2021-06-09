@@ -2,22 +2,71 @@
     background-color: var(--colour-btn1);
     color: var(--white);
     text-decoration: none;
-    padding: var(--space-md) var(--space-lg);
-    border-radius: 10%;
+    border-radius: 1rem;
+    height: auto;
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    box-sizing: border-box;
+    border: none;
+    min-width: 10rem;
 }
 
 .btn-yes {
     background-color: var(--colour-btn2);
     color: var(--white);
     text-decoration: none;
-    padding: var(--space-md) var(--space-lg);
-    border-radius: 10%;
+    border-radius: 1rem;
+    height: auto;
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    box-sizing: border-box;
+    border: none;
+    min-width: 10rem;
 }
 
 .btn-no {
     background-color: var(--colour-btn3);
     color: var(--white);
     text-decoration: none;
-    padding: var(--space-md) var(--space-lg);
-    border-radius: 10%;
+    border-radius: 1rem;
+    height: auto;
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    box-sizing: border-box;
+    border: none;
+    min-width: 10rem;
+}
+
+input {
+    border-radius: 1rem;
+    height: auto;
+    padding-top: var(--space-xxs);
+    padding-bottom: var(--space-xxs);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    box-sizing: border-box;
+    border: none;
+}
+
+.link-box {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: var(--space-xs);
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box > * {
+    width: inherit;
+    height: fit-content;
 }
