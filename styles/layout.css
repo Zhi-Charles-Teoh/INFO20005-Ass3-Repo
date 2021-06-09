@@ -447,3 +447,13 @@ section > * {
     grid-area: pd-section-btm;
     background-color: var(--colour-bg3);
 }
+
+/* shoppingcart.html */
+
+.cart__section-top {
+    background-color: var(--colour-bg7);
+}
+
+.cart__section-btm {
+    background-color: var(--colour-bg7);
+}

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Your Shopping Cart | Great Guitars AU</title>
 </head>
 <body>
-    <script language="javascript" type=text/javascript src="../reusables/header.txt"></script>   
+    <script language="javascript" type=text/javascript src="../reusables/header.txt"></script> 
+    
+    <section class="section-header"></section>
 
-    <section class="cart__sectin-top">
+    <section class="cart__section-top">
         <h1>YOUR CART</h1>
-        <a href="../pages/checkout.html">CHECKOUT NOW</a>
+        <a class="btn-yes" href="../pages/checkout.html">CHECKOUT NOW</a>
 
         <table class="table__cart">
             <tr>
@@ -77,40 +79,48 @@
         </table>
 
         <div class="cart__buttons">
-            <a href="../pages/catalogue.html">CONTINUE BROWSING</a>
-            <a href="../pages/checkout.html">CHECKOUT NOW</a>
+            <a class="btn-primary" href="../pages/catalogue.html">CONTINUE BROWSING</a>
+            <a class="btn-yes" href="../pages/checkout.html">CHECKOUT NOW</a>
         </div>
 
     </section>
 
 
     <section class=cart__section-btm>
-        <div class="gallery__recommended">
-            <h2>RECOMMENDED FOR YOU</h2>
-            <div class="product__box">
-                <h4 class="manufacture-year">1974</h4>
-                <img src="../images/guitar2.jpg">
-                <h3>IBANEZ</h3><h4>Les Paul 2593</h4>
-                <h2>$ 1,995</h2>
-            </div>
-            <div class="product__box">
-                <h4 class="manufacture-year">1974</h4>
-                <img src="../images/guitar2.jpg">
-                <h3>IBANEZ</h3><h4>Les Paul 2593</h4>
-                <h2>$ 1,995</h2>
-            </div>
-            <div class="product__box">
-                <h4 class="manufacture-year">1974</h4>
-                <img src="../images/guitar2.jpg">
-                <h3>IBANEZ</h3><h4>Les Paul 2593</h4>
-                <h2>$ 1,995</h2>
-            </div>
-            <div class="product__box">
-                <h4 class="manufacture-year">1974</h4>
-                <img src="../images/guitar2.jpg">
-                <h3>IBANEZ</h3><h4>Les Paul 2593</h4>
-                <h2>$ 1,995</h2>
-            </div>
+        <h2>RECOMMENDED FOR YOU</h2>
+        <div class="gallery cluster">
+            <a href="../pages/productpage.html">
+                <div class="product-box">
+                    <img src="../images/guitar1.jpg">
+                    <div class="box__year"><p>1974</p></div>
+                    <div class="box__brand"><h3>Ibanez </h3><h4>Les Paul 2380</h4></div>
+                    <div class="box__price"><h3>$ 1,995</h3></div>
+                </div>
+            </a>
+            <a href="../pages/productpage.html">
+                <div class="product-box">
+                    <img src="../images/guitar2.jpg">
+                    <div class="box__year"><p>ca. 1960</p></div>
+                    <div class="box__brand"><h3>EKO </h3><h4>300/SR2</h4></div>
+                    <div class="box__price"><h3>$ 2,375</h3></div>
+                </div>
+            </a>
+            <a href="../pages/productpage.html">
+                <div class="product-box">
+                    <img src="../images/guitar1.jpg">
+                    <div class="box__year"><p>ca. 1800</p></div>
+                    <div class="box__brand"><h3>Luthier </h3><h4>Lourdes Uncilla</h4></div>
+                    <div class="box__price"><h3>$ 1,995</h3></div>
+                </div>
+            </a>
+            <a href="../pages/productpage.html">
+                <div class="product-box">
+                    <img src="../images/guitar3.jpg">
+                    <div class="box__year"><p>2007</p></div>
+                    <div class="box__brand"><h3>Jerry Jones </h3><h4>Electric Sitar</h4></div>
+                    <div class="box__price"><h3>$ 3,450</h3></div>
+                </div>
+            </a>
         </div>
     </section>
 
