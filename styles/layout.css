@@ -551,6 +551,10 @@ section > * {
     display: inline;
 }
 
+.cart__top-top > h4 {
+    font-weight: bold;
+}
+
 .grand-total {
     border-top: 1px solid lavender;
 }
@@ -569,9 +573,11 @@ section > * {
     padding: 2rem;
     background-color: var(--colour-bg7);
     display: grid;
+    grid-template-columns: 50% 50%;
     grid-template-areas: 
         "ck-forms ck-sum";
     align-items: start;
+    justify-items: center;
 }
 
 .left__forms {
@@ -708,6 +714,63 @@ form#form__billing, form#form__shipping, form#form__payment {
 
 .right__order-summary {
     grid-area: ck-sum;
+    position: sticky;
+    box-sizing: border-box;
+    top: 10rem; 
+}
+
+.order-summary {
+    position: relative;
+    text-align: right;
+}
+
+.order-cart {
+    width: 100%;
+    font-size: var(--text-xs);
+    border-spacing: 10px;
+    border: 0px solid lavender;
+    margin-bottom: var(--space-xxs);
+}
+
+
+.order__tb-col-1 {
+    text-align: left;
+    width: 70%;
+}
+
+.tb-row-1 {
+    padding-top: var(--space-md);
+}
+
+.tb-row-last {
+    padding-bottom: var(--space-md);
+}
+
+.sum-add {
+    font-size: var(--text-xs);
+    font-style: italic;
+
+}
+
+.order-shipping {
+    width: 25rem;
+    font-size: var(--text-sm);
+}
+
+.order-shipping > tbody > tr > td > h3 {
+    font-size: var(--text-md);
+}
+
+.order-shipping > tbody > tr > td > p {
+    font-style: italic;
+}
+
+.ship__tb-col-last {
+    text-align: right;
+}
+
+.order-shipping > tbody > .grand-total {
+    font-size: var(--text-md);
 }
 
 /* error.html, thankyou.html */

@@ -166,3 +166,11 @@ input {
     bottom: 8%;
     font-weight: bold;
 }
+
+.roundbox {
+    border: 1px solid lavender;
+    border-radius: 1rem;
+    max-width: 25rem;
+    width: 100%;
+    margin-bottom: var(--space-xxxs);
+}
