@@ -1,6 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="66.399" height="66.399" viewBox="0 0 66.399 66.399">
-  <g id="Component_12_2" data-name="Component 12 – 2" transform="translate(5.5 5.5)">
-    <path id="Icon_awesome-arrow-circle-right" data-name="Icon awesome-arrow-circle-right" d="M28.262.563a27.7,27.7,0,1,1-27.7,27.7A27.695,27.695,0,0,1,28.262.563Z" transform="translate(-0.563 -0.563)" fill="#fff" stroke="#000" stroke-width="11"/>
-    <path id="Icon_awesome-arrow-circle-right-2" data-name="Icon awesome-arrow-circle-right" d="M24.99.563A24.428,24.428,0,1,1,.563,24.99,24.423,24.423,0,0,1,24.99.563ZM22.143,14.707l7.437,7.131H11.594A2.358,2.358,0,0,0,9.23,24.2v1.576a2.358,2.358,0,0,0,2.364,2.364H29.58l-7.437,7.131a2.367,2.367,0,0,0-.039,3.378l1.083,1.074a2.354,2.354,0,0,0,3.339,0L39.6,26.665a2.354,2.354,0,0,0,0-3.339L26.527,10.245a2.354,2.354,0,0,0-3.339,0L22.1,11.319a2.378,2.378,0,0,0,.039,3.388Z" transform="translate(2.709 2.709)"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="20.361" height="32.972" viewBox="0 0 20.361 32.972">
+  <path id="Icon_material-first-page" data-name="Icon material-first-page" d="M16.5,38.1,29.112,25.486,16.5,12.874,20.374,9,36.861,25.486,20.374,41.972Z" transform="translate(-16.5 -9)" fill="#fff"/>
 </svg>

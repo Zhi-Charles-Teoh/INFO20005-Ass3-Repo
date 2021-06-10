@@ -14,67 +14,85 @@
     <section class="section-header"></section>
 
     <section class="cart__section-top">
-        <h1>YOUR CART</h1>
-        <a class="btn-yes" href="../pages/checkout.html">CHECKOUT NOW</a>
+        
+        <div class="cart__top-top">
+            <h1>YOUR CART</h1><a class="btn-yes" href="../pages/checkout.html">CHECKOUT NOW</a>
+        </div>
 
-        <table class="table__cart">
+        <table class="cart__table">
             <tr>
-                <th colspan="5">Item</th>
+                <th colspan="5" class="cart__tb-col-1">Item</th>
                 <th>Qty</th>
                 <th>Unit $</th>
                 <th>Subtotal $</th>
             </tr>
             <tr>
-                <td>
-                    <img src="../images/guitarwhite6.jpg">
-                    <a href="../pages/productpage.html">FRAMUS Star Bass</a>
+                <td colspan="5" class="cart__tb-col-1">
+                    <div class="product-box cart__pd-box">
+                        <img src="../images/guitarwhite6.jpg">
+                    </div>
+                    <a class="cart__pd" href="../pages/productpage.html">FRAMUS Star Bass</a>
                 </td>
-                <td>
-                    <input type="number" value="1" min="1">
-                    <a href="#"><img src="../icons/delete.svg"></a>
+                <td class="cart__tb-col-2"> 
+                    <div class="cluster">
+                        <input class="in-num" type="number" value="1" min="1">
+                        <a class="btn-no btn-del" href="#"><img src="../icons/delete.svg"></a>
+                    </div>
                 </td>
                 <td>2,995</td>
                 <td>2,995</td>
             </tr>
             <tr>
-                <td>
-                    <img src="../images/guitarwhite10.jpg">
-                    <a href="../pages/productpage.html">IBANEZ Les Paul 2380</a>
+                <td colspan="5" class="cart__tb-col-1">
+                    <div class="product-box cart__pd-box">
+                        <img src="../images/guitarwhite10.jpg">
+                    </div>
+                    <a class="cart__pd" href="../pages/productpage.html">IBANEZ Les Paul 2380</a>
                 </td>
-                <td>
-                    <input type="number" value="2" min="1">
-                    <a href="#"><img src="../icons/delete.svg"></a>
+                <td class="cart__tb-col-2"> 
+                    <div class="cluster">
+                        <input class="in-num" type="number" value="2" min="1">
+                        <a class="btn-no btn-del" href="#"><img src="../icons/delete.svg"></a>
+                    </div>
                 </td>
                 <td>1,995</td>
                 <td>3,990</td>
             </tr>
             <tr>
-                <td>
-                    <img src="../images/guitarwhite2.jpg">
-                    <a href="../pages/productpage.html">EKO 300/SR2</a>
+                <td colspan="5" class="cart__tb-col-1">
+                    <div class="product-box cart__pd-box">
+                        <img src="../images/guitarwhite2.jpg">
+                    </div>
+                    <a class="cart__pd" href="../pages/productpage.html">EKO 300/SR2</a>
                 </td>
-                <td>
-                    <input type="number" value="1" min="1">
-                    <a href="#"><img src="../icons/delete.svg"></a>
+                <td class="cart__tb-col-2"> 
+                    <div class="cluster">
+                        <input class="in-num" type="number" value="1" min="1">
+                        <a class="btn-no btn-del" href="#"><img src="../icons/delete.svg"></a>
+                    </div>
                 </td>
                 <td>2,375</td>
                 <td>2,375</td>
             </tr>
             <tr>
-                <td>
-                    <img src="../images/guitar3.jpg">
-                    <a href="../pages/productpage.html">LUTHIER Lourdes Uncilla</a>
+                <td colspan="5" class="cart__tb-col-1">
+                    <div class="product-box cart__pd-box">
+                        <img src="../images/guitar3.jpg">
+                    </div>
+                    <a class="cart__pd" href="../pages/productpage.html">LUTHIER Lourdes Uncilla</a>
                 </td>
-                <td>
-                    <input type="number" value="5" min="1">
-                    <a href="#"><img src="../icons/delete.svg"></a>
+                <td class="cart__tb-col-2"> 
+                    <div class="cluster">
+                        <input class="in-num" type="number" value="5" min="1">
+                        <a class="btn-no btn-del" href="#"><img src="../icons/delete.svg"></a>
+                    </div>
                 </td>
                 <td>2,750</td>
                 <td>13,750</td>
             </tr>
             <tr class="grand-total">
-                <td>ORDER TOTAL (excluding shipping)</td>
-                <td><b>$ 23,110</b></td>
+                <th colspan="7" class="gt-col-1">ORDER TOTAL (excluding shipping)</th>
+                <th>$ 23,110</th>
             </tr>
         </table>
 

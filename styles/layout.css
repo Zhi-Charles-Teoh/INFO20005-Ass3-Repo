@@ -1,5 +1,9 @@
 /* General */
 
+body, html {
+    width: 100vw;
+}
+
 .cluster {
     display: flex;
     flex-wrap: wrap;
@@ -39,12 +43,13 @@ a:link, a:visited {
 }
 
 a:hover {
-    color: var(--colour-btn2);
+    color: teal;
     text-decoration: none;
 }
 
 footer {
     background-color: var(--colour-bg4);
+    width: 100%;
 }
 
 
@@ -122,6 +127,7 @@ section {
     align-items: center;
 	height: auto;
     padding: 3rem;
+    width: auto;
 }
 
 section > * {
@@ -391,6 +397,7 @@ section > * {
 .pd__desc-short {
     font-size: var(--text-sm);
     max-width: 70%;
+    line-height: var(--space-md);
 }
 
 .pd__price-button {
@@ -454,8 +461,253 @@ section > * {
     background-color: var(--colour-bg7);
 }
 
+.cart__top-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
 .cart__section-btm {
     background-color: var(--colour-bg7);
+}
+
+.cart__table {
+    border: 0px solid lavender;
+    border-radius: 1rem;
+    width: 80%;
+}
+
+.cart__table > table, td, th {
+    padding: var(--space-sm);
+    text-align: center;
+    width: 7rem;
+}
+
+.cart__table > table, th {
+    font-weight: bold;
+}
+
+.cart__tb-col-1 {
+    text-align: left;
+}
+
+.cart__tb-col-2 {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.cart__pd-box {
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    margin: 0;
+}
+
+.cart__pd {
+    display: inline;
+    padding: var(--space-sm);
+}
+
+.in-num, .btn-del {
+    border-radius: var(--space-sm);
+}
+
+.in-num {
+    max-width: none;
+    min-width: none;
+    width: 3rem;
+    height: 2.4rem; 
+}
+
+.btn-del {
+    max-width: 2.4rem;
+    min-width: 0;
+    width: 2.4rem;
+    height: 2.4rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.cart__top-top, .cart__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.cart__top-top {
+    justify-content: space-between;
+}
+
+.cart__top-top > * {
+    display: inline;
+}
+
+.grand-total {
+    border-top: 1px solid lavender;
+}
+
+.grand-total > * {
+    padding-top: var(--space-md);
+}
+
+.gt-col-1 {
+    text-align: right;
+}
+
+/* checkout.html */
+
+.section-checkout {
+    padding: 2rem;
+    background-color: var(--colour-bg7);
+    display: grid;
+    grid-template-areas: 
+        "ck-forms ck-sum";
+    align-items: start;
+}
+
+.left__forms {
+    grid-area: ck-forms;
+    max-width: 20rem;
+}
+
+.form1__billing-info, .form2__shipping-info, .form3__payment info {
+    margin: var(--space-lg) 0 var(--space-lg) 0;
+}
+
+form#form__billing, form#form__shipping, form#form__payment {
+    margin: var(--space-md) 0 var(--space-md) 0;
+}
+
+.ck-forms {
+    max-width: 30rem;
+}
+
+.ck-forms > label {
+    font-size: var(--text-xs);
+}
+
+.single-textbox {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: var(--space-xs) 0 var(--space-xs) 0;
+    margin: 0;
+}
+
+.single-textbox > * {
+    margin: var(--space-xxxs);
+}
+
+.single-textbox > input {
+    width: 100%;
+}
+
+.double-textbox {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.double-textbox > .single-textbox > input {
+    width: 100%;
+}
+
+.double-left {
+    margin-right: var(--space-xxs);
+}
+
+.double-right {
+    margin-left: var(--space-xxs);
+}
+
+.form-checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: var(--space-xs) 0 var(--space-xs) 0;
+}
+
+.form-checkbox > * {
+    margin: 0;
+}
+
+.form-checkbox > p {
+    display: inline;
+    margin-left: var(--space-sm);
+}
+
+.quad-textbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.form-expiry {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    width: 70%;
+    margin: 0 0 0 var(--space-xxxs);
+    padding: 0;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quad-textbox > * {
+    width: 100%;
+    margin: var(--space-xxxs);
+}
+
+.form-expiry > * {
+    width: 100%;
+    margin: var(--space-xxxs);
+}
+
+.form-expiry > h1 {
+    margin: 0;
+}
+
+.form__buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--space-xl) 0 0 0;
+    width: 100%;
+    padding: 0;
+}
+
+.btn-proceed {
+    min-width: 0;
+    max-width: none;
+    width: 6rem;
+    margin: 0;
+}
+
+.btn-back {
+    min-width: 0;
+    max-width: none;
+    width: 5rem;
+    margin: 0;
+}
+
+.right__order-summary {
+    grid-area: ck-sum;
 }
 
 /* error.html, thankyou.html */

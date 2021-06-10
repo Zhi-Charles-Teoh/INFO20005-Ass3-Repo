@@ -5,10 +5,10 @@
     text-transform: uppercase;
     border-radius: 1rem;
     height: auto;
-    padding: var(--space-sm);
+    padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-md);
     box-sizing: border-box;
     border: none;
-    width: 10rem;
+    min-width: 10rem;
     margin: var(--space-sm);
     list-style-type: none;
     font-family: var(--font-primary);
@@ -16,6 +16,9 @@
     border: none;
     font-size: var(--text-sm);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-yes {
@@ -25,10 +28,10 @@
     text-transform: uppercase;
     border-radius: 1rem;
     height: auto;
-    padding: var(--space-sm);
+    padding:var(--space-sm) var(--space-md) var(--space-sm) var(--space-md);
     box-sizing: border-box;
     border: none;
-    width: 10rem;
+    min-width: 10rem;
     margin: 0.5rem;
     list-style-type: none;
     font-family: var(--font-primary);
@@ -36,6 +39,9 @@
     border: none;
     font-size: var(--text-sm);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-no {
@@ -45,10 +51,10 @@
     text-transform: uppercase;
     border-radius: 1rem;
     height: auto;
-    padding: var(--space-sm);
+    padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-md);
     box-sizing: border-box;
     border: none;
-    width: 10rem;
+    min-width: 10rem;
     margin: 0.5rem;
     list-style-type: none;
     font-family: var(--font-primary);
@@ -56,6 +62,9 @@
     border: none;
     font-size: var(--text-sm);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery {
