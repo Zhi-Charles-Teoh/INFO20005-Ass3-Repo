@@ -1,7 +1,11 @@
 /* General */
 
-body, html {
-    width: 100vw;
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .cluster {
@@ -20,7 +24,7 @@ body, html {
 
 .section-header {
     grid-area: header;
-    height: 2rem;
+    height: 1rem;
     background-color: white;
 }
 
@@ -35,6 +39,11 @@ header {
 .img__header {
     padding-left: var(--space-lg);
     padding-right: var(--space-lg);
+    max-width: 60%;
+}
+
+.h__nav {
+    flex-wrap: nowrap;
 }
 
 a:link, a:visited {
@@ -146,7 +155,7 @@ section > * {
         "section-d"
         "section-nl";
 
-    grid-template-rows: 100vh auto auto auto;
+    grid-template-rows: 100vh auto auto auto auto;
     grid-template-columns: 100%;
 }
 

@@ -1,0 +1,60 @@
+.hamburger {
+    display: none;
+}
+
+.h__ham-block {
+    display: none;
+}
+
+.h__ham-block.responsive {
+    display: block;
+}
+
+.h__hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    height: 100%;
+    background-color: var(--colour-btn1);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: var(--space-md);
+    z-index: 2;
+}
+
+.ham__nav {
+    flex-direction: column;
+    margin-bottom: var(--space-md);
+}
+
+.ham__widgets {
+    display: none;
+    flex-wrap: nowrap;
+}
+
+.hamburger:hover + .h__hamburger-block {
+    display: block;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .hamburger {
+        display: block;
+    }
+
+    .h__topnav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .h__widgets {
+        display: none;
+    }
+
+    .ham__widgets{
+        display: flex;
+    }
+}

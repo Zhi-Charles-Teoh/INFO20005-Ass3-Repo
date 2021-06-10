@@ -8,37 +8,53 @@ header.txt to update it.  -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/scriptgen.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div id="hamBlock" class="h__ham-block">
+        <div class="h__hamburger-menu">
+            <div class="ham__nav cluster">
+                <a href="../pages/catalogue.html">GUITARS</a>
+                <a href="../pages/catalogue.html">HOFNER PARTS</a>
+                <a href="../pages/catalogue.html">ACCESSORIES</a>
+                <a href="../pages/error.html">TRADING</a>
+                <a href="../pages/error.html">TESTIMONIALS</a>
+                <a href="../pages/error.html">CONTACT</a>
+            </div>
+            <div class="ham__widgets cluster">
+                <a href="#"><img src="../icons/search.svg"></a>
+                <a href="../pages/shoppingcart.html"><img src="../icons/trolley.svg" alt="View your shopping cart"></a>
+                <a href="../pages/login.html"><img src="../icons/user.svg" alt="Login/Sign Up"></a>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="cluster">
             <div class="h__nav cluster">
+                <a href="javascript:void(0);" id="hamburger" class="hamburger" onclick="hamReveal()">☰</a>
                 <a href="../pages/index.html">
                     <img class="img__header" src="../icons/brand.svg" alt="Great Guitars Home">
                 </a>
-                <ul class="cluster">
+                <ul class="cluster h__topnav">
                     <li><a href="../pages/catalogue.html">GUITARS</a></li>
                     <li><a href="../pages/catalogue.html">HOFNER PARTS</a></li>
                     <li><a href="../pages/catalogue.html">ACCESSORIES</a></li>
                     <li><a href="../pages/error.html">TRADING</a></li>
-                    <li><a href="../pages/testimonials.html">TESTIMONIALS</a></li>
+                    <li><a href="../pages/error.html">TESTIMONIALS</a></li>
                     <li><a href="../pages/error.html">CONTACT</a></li>
                 </ul>
             </div>
-            
             <div class="h__widgets cluster">
                 <input class="searchbar" type="text" placeholder="Search...">
-                <a href="../pages/shoppingcart.html">
-                    <img class="cart" src="../icons/trolley.svg" alt="View your shopping cart">
-                </a>
-                <a href="../pages/login.html">
-                    <img class="login" src="../icons/user.svg" alt="Login/Sign Up">
-                </a>
+                <a href="../pages/shoppingcart.html"><img class="cart" src="../icons/trolley.svg" alt="View your shopping cart"></a>
+                <a href="../pages/login.html"><img class="login" src="../icons/user.svg" alt="Login/Sign Up"></a>
             </div>
         </nav>
+        
     </header>
+    
 </body>
 </html>
