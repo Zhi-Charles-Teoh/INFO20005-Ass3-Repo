@@ -259,6 +259,8 @@
     .cart__top-top, .cart__buttons {
         flex-wrap: wrap;
         justify-content: center;
+        text-align: center;
+        justify-self: center;
     }
 
     .cart__top-top > h1 {
@@ -271,6 +273,10 @@
 @media screen and (max-width: 1020px) {
     .right__order-summary {
         display: none;
+    }
+
+    .order-summary {
+        text-align: left;
     }
 
     .section-checkout {
