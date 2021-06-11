@@ -115,8 +115,8 @@ input {
     background-size: 100%;
     justify-content: center;
     align-items: center;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     margin: var(--space-sm);
     position: relative;
 }

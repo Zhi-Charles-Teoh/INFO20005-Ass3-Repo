@@ -1,3 +1,5 @@
+/* This CSS file assumes the standard browser width of 1920px. */
+
 /* General */
 
 html,body {
@@ -24,15 +26,15 @@ html,body {
 
 .section-header {
     grid-area: header;
-    height: 1rem;
+    height: auto;
     background-color: white;
 }
 
 header {
     background-color: var(--colour-bg1);
     position: fixed;
-    width: 100%;
-    z-index: 1;
+    width: 100vw;
+    z-index: 2;
     font-size: var(--text-md);
 }
 
@@ -265,6 +267,10 @@ section > * {
     background-color: var(--colour-bg5);
 }
 
+.responsive-categories, .re-cats {
+   display: none;     
+}
+
 /* catalogue.html */
 
 .section-catalogue {
@@ -363,15 +369,17 @@ section > * {
 }
 
 .right__pd {
+    grid-area: pd-desc;
     position: relative;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 10%;
 }
 
 .pd__navlink {
     position: absolute;
     top: 15%;
-    left: 20%;
     font-size: var(--text-sm);
 }
 
@@ -379,7 +387,6 @@ section > * {
     position: absolute;
     top: 30%;
     bottom: 20%;
-    left: 20%;
 }
 
 .pd__title {
@@ -413,6 +420,7 @@ section > * {
 .pd__price-button {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
     padding-top: 1rem;
@@ -420,6 +428,7 @@ section > * {
 
 .pd__price {
     font-size: var(--text-lg);
+    white-space: nowrap;
 }
 
 .pd__price-button > .btn-primary {
@@ -813,6 +822,7 @@ form#form__billing, form#form__shipping, form#form__payment {
 .section-login {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
     justify-items: start;
     align-items: start;
     background-size: cover;
@@ -826,7 +836,7 @@ form#form__billing, form#form__shipping, form#form__payment {
 }
 
 .login-box, .rego-box {
-    max-width: 20rem;
+    max-width: 12rem;
     margin: 5rem;
 }
 
