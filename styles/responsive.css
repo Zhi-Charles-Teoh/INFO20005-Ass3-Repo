@@ -295,7 +295,7 @@
         z-index: 1;
         border-bottom: 1px solid lavender;
         width: 100%;
-        font-size: var(--text-xxs);
+        font-size: var(--text-sm);
     }
 
     .responsive-sum > .sum-table > .cart__top-top {
