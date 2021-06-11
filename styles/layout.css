@@ -599,6 +599,10 @@ section > * {
     justify-items: center;
 }
 
+.responsive-sum {
+    display: none;
+}
+
 .left__forms {
     grid-area: ck-forms;
     max-width: 20rem;
@@ -658,7 +662,7 @@ form#form__billing, form#form__shipping, form#form__payment {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: var(--space-xs) 0 var(--space-xs) 0;
+    padding: var(--space-md) 0 var(--space-xs) 0;
 }
 
 .form-checkbox > * {

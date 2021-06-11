@@ -15,7 +15,63 @@
     <section class="section-header"></section>
 
     <section class="section-checkout">
-        
+        <div class="responsive-sum">
+            <div class="sum-table">
+                <div class="cart__top-top">
+                    <h4>ORDER SUMMARY</h4>
+                </div>
+                <div class="order-summary">
+                    <div class="roundbox">
+                        <table class="cart__table order-cart">
+                            <tr>
+                                <td class="tb-row-1 order__tb-col-1">
+                                    <a class="cart__pd" href="../pages/productpage.html">FRAMUS Star Bass</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="order__tb-col-1">
+                                    <a class="cart__pd" href="../pages/productpage.html">IBANEZ Les Paul 2380</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="order__tb-col-1">
+                                    <a class="cart__pd" href="../pages/productpage.html">EKO 300/SR2</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tb-row-last order__tb-col-1">
+                                    <a class="cart__pd" href="../pages/productpage.html">LUTHIER Lourdes Uncilla</a>
+                                </td>
+                            </tr>                    
+                        </table>
+                    </div>
+                    <a class="sum-add" href="../pages/shoppingcart.html">Back to cart</a>
+                </div>
+            </div>
+            <div class="sum-total">
+                <table class="cart__table order-shipping">
+                    <tr>
+                        <td class="tb-row-1 order__tb-col-1"><h3>ORDER TOTAL</h3></td>
+                        <td><h3>$</h3></td>
+                        <td class="ship__tb-col-last"><h3>23,100.00</h3></td>
+                    </tr>
+                    <tr>
+                        <td class="order__tb-col-1">
+                            <h3>SHIPPING FEES</h3>
+                        </td>
+                        <td><h3>$</h3></td>
+                        <td class="ship__tb-col-last"><h3>10.00</h3></td>
+                    </tr>
+                    <tr class="grand-total">
+                        <th class="tb-row-last order__tb-col-1">GRAND TOTAL</th>
+                        <th>$</th>
+                        <th class="ship__tb-col-last">23,110.00</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
         <div class="left__forms">
             <div class="cart__top-top">
                 <h1>CHECKOUT</h1>
@@ -56,11 +112,12 @@
 
             <div class="form2__shipping-info">
                 <h3>2) SHIPPING INFORMATION</h3>
+                <div class="form-checkbox">
+                    <input type="checkbox" onclick="disableShipping()">
+                    <p>Shipping information same as billing information</p>
+                </div>
                 <form id="form__shipping">
-                    <div class="form-checkbox">
-                        <input type="checkbox">
-                        <p>Shipping information same as billing information</p>
-                    </div>
+                    
                     <div class="single-textbox cluster ck-forms">
                         <label for="shipping__fname">Receiver name</label>
                         <input type="text" id="shipping__fname" name="shipping__fname" placeholder="e.g.: John Doe">

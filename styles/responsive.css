@@ -265,3 +265,71 @@
         text-align: center;
     }
 }
+
+/* checkout.html */
+
+@media screen and (max-width: 1020px) {
+    .right__order-summary {
+        display: none;
+    }
+
+    .section-checkout {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "res-sum"
+            "ck-forms";
+            padding: 0 0 3rem 0;
+    }
+
+    .responsive-sum {
+        grid-area: res-sum;
+        display: grid;
+        position: sticky;
+        top: 5rem; 
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        background-color: var(--colour-bg4);
+        z-index: 1;
+        border-bottom: 1px solid lavender;
+        width: 100%;
+        font-size: var(--text-xxs);
+    }
+
+    .responsive-sum > .sum-table > .cart__top-top {
+        margin: var(--space-sm);
+        white-space: nowrap;
+    }
+
+    .tb-row-1 {
+        padding-top: var(--space-sm);
+    }
+
+    .tb-row-last {
+        padding-bottom: var(--space-sm);
+    }
+
+    .order__tb-col-1 {
+        width: initial;
+        padding-left: var(--space-sm);
+    }
+
+    .roundbox {
+        width: 90%;
+        border-radius: var(--space-xs);
+    }
+
+    .cart__table > table, td, th {
+        padding: var(--space-xxs);
+    }
+
+    .order-shipping {
+        width: 70%;
+    }
+
+    .left__forms {
+        padding: var(--space-md)
+    }
+}
